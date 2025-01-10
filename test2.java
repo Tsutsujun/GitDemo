@@ -5,14 +5,16 @@ public class test2 {
     msg += "World!";
     System.out.println(msg);
 
+    int odd_sum = 0;
     int even_sum = 0;
     for (int i = 1; i <= 100; i++) {
       if (i % 2 == 0) {
         even_sum += i;
       } else {
-        continue;
+        odd_sum += i;
       }
     }
-    System.out.println(even_sum);
+    System.out.println("The sum of odd numbers is " + odd_sum);
+    System.out.println("The sum of even numbers is " + even_sum);
   }
 }
